@@ -1,6 +1,6 @@
 import * as React from "react"
 
-const IndexPage = () => {
+const NotFoundPage = () => {
   return (
     <main>
       <title>404 Page</title>
@@ -9,4 +9,4 @@ const IndexPage = () => {
   )
 }
 
-export default IndexPage
+export default NotFoundPage
