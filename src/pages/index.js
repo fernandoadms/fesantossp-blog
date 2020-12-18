@@ -19,6 +19,9 @@ const IndexPage = () => {
               date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
             }
             timeToRead
+             fields {
+              slug
+            }
           }
         }
       }
@@ -38,11 +41,15 @@ const IndexPage = () => {
             date,
             description,
             title },
-          timeToRead },
+          timeToRead,
+          fields: {
+            slug
+          }
+        },
       }) => (
         <PostItem
           background={background}
-          slug={"/about/"}
+          slug={slug}
           category={category}
           date={date}
           timeToRead={timeToRead}
