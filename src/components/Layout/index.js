@@ -16,6 +16,7 @@ const Layout = ({ children }) => {
       <S.LayoutMain>
         {children}
       </S.LayoutMain>
+
       <MenuBar />
     </S.LayoutWrapper>
   )
