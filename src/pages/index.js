@@ -1,12 +1,15 @@
 import * as React from 'react'
+
 import Layout from '../components/Layout'
+import SEO from '../components/SEO'
+import PostItem from '../components/PostItem'
 
 const IndexPage = () => {
   return (
     <Layout>
-      <title>Home Page</title>
+      <SEO title='Home' />
       
-      <h1>Home Page</h1>
+      <PostItem />
     </Layout>
   )
 }
