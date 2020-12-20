@@ -49,9 +49,11 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 960,
+              links: false
             },
           },
-          `gatsby-remark-lazy-load`
+          `gatsby-remark-lazy-load`,
+          `gatsby-remark-prismjs`
         ],
       },
     },
