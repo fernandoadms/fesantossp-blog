@@ -64,6 +64,12 @@ module.exports = {
         path: `${__dirname}/posts`,
       },
     },
+    {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+        shortname: `https-fsfront-github-io`
+      }
+    },
     'gatsby-plugin-netlify-cms',
     'gatsby-plugin-sharp',
     'gatsby-plugin-styled-components',
