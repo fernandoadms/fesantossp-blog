@@ -48,11 +48,11 @@ exports.createPages = ({ graphql, actions }) => {
           }
         }
         previous {
-          frontmatter {
-            title
-          }
           fields {
             slug
+          }
+          frontmatter {
+            title
           }
         }
       }
@@ -67,8 +67,8 @@ exports.createPages = ({ graphql, actions }) => {
         component: path.resolve('./src/templates/blog-post.js'),
         context: {
           slug: node.fields.slug,
-          previousPost: next,
-          nextPost: previous
+          previousPost: previous,
+          nextPost: next
         }
       })
     })
