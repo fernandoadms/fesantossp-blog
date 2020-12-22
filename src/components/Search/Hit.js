@@ -5,7 +5,7 @@ const Hit = ({ hit }) => (
   <PostItem
     slug={hit.fields.slug}
     background={hit.background}
-    date={hit.fields.title}
+    title={hit.title}
     date={hit.date}
     description={hit.description}
     category={hit.category}
